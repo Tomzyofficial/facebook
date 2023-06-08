@@ -1,0 +1,32 @@
+.body {background-color: #fff;}
+/* header */
+header .container-fluid {justify-content: space-between; width: 100%;}
+header .search {position: relative; transform: translate(-500px, 10px);}
+header .search i {background-color: #f2f3f5;; padding: 12px 12px; display: inline-flex; border-radius: 50%;}
+main .contents {float: left; position: fixed; border-right: 1px solid #ddd; background-color: #fff; width: 4.6%; line-height: 50px; height: 100vh;}
+/* article side */
+main .wrappers .home .fa-home-icon {padding: 5px 5px; translate: 10px; display: inline-flex; }
+main .wrappers .home .fa-home-icon:hover {background-color: #f2f3f5;}
+main .wrappers .home .fa-home-icon:active, main .wrappers .home .fa-home-icon:focus {box-shadow: none;}
+main .wrappers .active {background-color: var(--sub-text-color); height: 40px; width: 4px; position: absolute; left: 0;  border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+main .home .account_name {display: inline-flex; padding: 5px 5px; translate: 10px;}
+main .home .account_name:hover {background-color: #f2f3f5;}
+main .home .account_name:active, main .home .account_name:focus {box-shadow: none;}
+main .home .account_name img {width: 25px; height: 25px; border-radius: 50%;}
+/* other left side articles */
+main .wrappers .watch_platform .btn, .friends_list .btn, .market_place .btn, .gamings .btn, .see_all .btn, .group_member .btn, .shorts .btn {display: inline-flex; padding: 5px 5px; translate: 10px;}
+main .wrappers .watch_platform .btn:hover, .friends_list .btn:hover, .market_place .btn:hover, .gamings .btn:hover,  .see_all .btn:hover,.group_member .btn:hover, .shorts .btn:hover {background-color: #f2f3f5;}
+main .wrappers .watch_platform .btn:active, .friends_list .btn:active, .market_place .btn:active, .gamings .btn:active,  .see_all .btn:active, .group_member .btn:active, .shorts .btn:active {box-shadow: none;}
+main .wrappers .watch_platform .btn:focus, .friends_list .btn:focus, .market_place .btn:focus, .gamings .btn:focus,  .see_all .btn:focus, .group_member .btn:focus, .shorts .btn:focus {box-shadow: none;}
+/* upper profile picture area */
+section .profile_section {background-image: linear-gradient(to right, rgb(240, 240, 240), rgb(240, 242, 248)); height: 30vh;}
+section .profile_section .contains {margin-left: 240px; margin-right: 180px;}
+section .contains .profile_image {background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.4)), url("../images/37.PNG"); width: 100%; height: 50vh; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; position: relative; background-repeat: no-repeat; background-size: 100% 100%; object-fit: cover;}
+section .contains .inner_content img {width: 180px; height: 180px; position: absolute; border-radius: 50%; transform: translate(40px, -80px); border: 4px solid white;}
+section .inner_content .profile_name .first_span {position: absolute; transform: translate(175px, 50px); background-color: #f2f3f5; padding: 10px 10px; display: inline-flex; border-radius: 50%;}
+section .inner_content .profile_name .second_span {position: absolute; transform: translate(230px, 30px); display: inline-flex; font-weight: 700; font-size: 30px; color: #000;} 
+/* create avatar and edit cover photo */
+section .profile_avatar {position: absolute; right: 150px; transform: translate(-70px, -100px);}
+section .profile_avatar p {font-weight: 400; cursor: pointer; background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)); padding: 5px; color: #fff; border-radius: 7px;}
+section .profile_avatar p:hover {background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)); transition: all .5s ease;}
+/* article people you may know */

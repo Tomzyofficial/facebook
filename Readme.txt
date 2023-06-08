@@ -1,0 +1,1 @@
+This is not a complete project yet. This is a facebook clone (desktop version) I will be building and adding to it from time to time as I get free time. I am using node.js, javascript, express, html, css, and in my future deployment, I will add tailwindcss. This is just a play project so I just want to keep it clear as possible.

@@ -1,0 +1,94 @@
+:root {
+  /* --mainbg-color: #E4E6EB; */
+  --mainbg-color: #f2f3f5;
+  --sec-random-color: #050505;
+  --sub-text-color: rgba(0, 81, 255, 0.842);
+  --light-text-color: #fff;
+  --left-side-hover-color: #e4e6eb;
+  --search-bg-color: #f2f3f5;
+  --third-random-color: rgba(0, 0, 0, .05);
+  --random-color: #65676b;
+
+}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.body {background-color: var(--mainbg-color);overflow-x: hidden; position: relative; height: 140vh;}
+/* header */
+header {background-color: var(--light-text-color); height: 9vh;  position: sticky; top: 0; z-index: 1;  position: -webkit-sticky;}
+header .container-fluid {display: flex; width: 100%; justify-content: space-between; translate: 0 -5px;}
+header .logo .navbar-brand img {width: 140px; height: 60px; }
+header .content-search {color: var(--random-color); background-color: var(--search-bg-color); padding: 8px 8px; height: fit-content; width: 45%; border-radius: 20px; transform: translateY(10px);}
+header .content-search input {border: none; border-color: transparent; outline: none; background-color: transparent;}
+header .profile-side {transform: translateY(10px);}
+header .profile-side #messenger, #bell-notification {background-color: var(--mainbg-color); padding: 12px 12px; border-radius: 50%; color: black; position: relative; display: inline-flex;}
+header .profile-side #messenger img {width: 18px; height: 18px;}
+header .profile-side #profile-icon img {width: 37px; height: 37px; border-radius: 50%; position: relative}
+header .profile-side #profile-icon span {position: absolute; top: 28px; right: 0px; background-color: var(--mainbg-color); color: var(--sec-random-color); padding: 1px 2px; text-align: center; vertical-align: middle; font-size: 8px; font-weight: bolder; border-radius: 50%; border: 2px solid var(--light-text-color);}
+/* main
+article side */
+main .wrapper {padding: 10px 20px; position: fixed; left: 0;} 
+/* home profile */
+main .wrapper .active {background-color: var(--sub-text-color); height: 42px; width: 4px; position: absolute; left: 0; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+main .article .home-profile {line-height: 10px;}
+main .home-profile .home-icon {width: 300px; text-align: start; outline: none; border: none;}
+main .home-profile .home-icon:hover {background-color: var(--left-side-hover-color)}
+main .home-profile .home-icon:active, main .home-profile .home-icon:focus {box-shadow: none;}
+main .home-profile .home-icon i {font-size: 22px; color: var(--sub-text-color);}
+main .home-profile .profile-name {width: 300px; text-align: start;}
+main .home-profile .profile-name:hover {background-color: var(--left-side-hover-color);}
+main .home-profile .profile-name:active, main .home-profile .profile-name:focus {box-shadow: none;}
+main .home-profile .profile-name img {width: 25px; height: 25px; border-radius: 50%;}
+/* other left side articles */
+main .watch, .friends, .market-place, .gaming, .see-all, .all-groups, .short-cuts {line-height: 40px;}
+main .watch .btn, .friends .btn, .market-place .btn, .gaming .btn, .see-all .btn, .all-groups .btn, .short-cuts .btn {width: 300px; text-align: start; }
+main .watch .btn:hover, .friends .btn:hover, .market-place .btn:hover, .gaming .btn:hover, .see-all .btn:hover, .all-groups .btn:hover, .short-cuts .btn:hover {background-color: var(--left-side-hover-color);}
+main .watch .btn:active, .friends .btn:active, .market-place .btn:active, .gaming .btn:active, .see-all .btn:active, .all-groups .btn:active, .short-cuts .btn:active {box-shadow: none;}
+main .watch .btn:focus, .friends .btn:focus, .market-place .btn:focus, .gaming .btn:focus, main .see-all .btn:focus, .all-groups .btn:focus, .short-cuts .btn:focus {box-shadow: none;}
+main .see-all a i, .all-groups a i, .short-cuts a i {background-color: var(--left-side-hover-color); border-radius: 50%; align-items: center;}
+/* footer components */
+main .footer-components {position: relative; padding-top: 100px;}
+main .footer-components a {text-decoration: none; color: var(--random-color); font-size: 11px; font-weight: bold;}
+main .footer-components span {color: var(--random-color); font-size: 11px; font-weight: bold;}
+/* middle side article */
+main .middle-article {justify-content: center; justify-items: center; translate: 60%;}
+main .middle-contents {position: relative; margin: 20px 20px; background-color: var(--light-text-color); width: 100%; height: 45vh; border-radius: 10px;}
+main .middle-contents .stories-reels {transform: translateY(10px);}
+main .middle-contents .stories-header, .reels-header {width: 100%; border-bottom: 2px solid var(--search-bg-color);}
+main .middle-contents .stories-header button {font-size: 16px; width: 100%; color: var(--random-color); font-weight: 500; padding: 10px; outline: none; border: none; background-color: transparent;} 
+main .middle-contents .reels-header button {font-size: 16px; width: 100%; color: var(--random-color); font-weight: 500; background-color: transparent; padding: 10px; outline: none; border: none;}
+main .middle-contents .stories-header button.active {border-bottom: 3px solid var(--sub-text-color); color: var(--sub-text-color);}
+main .middle-contents .reels-header button.active {border-bottom: 3px solid var(--sub-text-color); color: var(--sub-text-color)}
+/* profile gallery */
+main .grid {padding-top: 20px; padding-left: 20px; position: relative;} 
+main .grid .card {width: 23%; float: left; border-radius: 10px;}
+main .card a img {width: 100%; height: 150px; border-top-left-radius: 10px; border-top-right-radius: 10px; position: relative;}
+main .card span {position: absolute; background-color: var(--sub-text-color); color: var(--light-text-color); font-size: 19px; font-weight: 2px; left: 32%; top: 65%; display: flex; align-items: center; justify-content: center; padding: 6px;  border-radius: 50%; border: 3px solid var(--light-text-color);}
+main .card .desc {text-align: center; font-weight: 500; font-size: 13px;}
+/* inside write up */
+main .writeup {translate: 30px 30px; position: relative;}
+main .writeup ul {list-style: none; font-size: small;}
+main .writeup .chevron-right {color: var(--random-color); position: absolute; right: 40px; top: 35%;  border-radius: 50%; height: 50px; width: 10%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 0; }
+main .second-contents {position: relative; display: none;}
+main .second-contents img {width: 115px; height: 200px; border-radius: 10px; margin: 5px;}
+main .second-contents .chevron {color: var(--random-color); position: absolute; right: 20px; top: 35%;  border-radius: 50%; height: 50px; width: 10%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 0; }
+/* live-video, photo/video upload, feeling*/
+main .end-contents {margin: 0 20px; width: 100%;}
+main .end-contents .card {height: 20vh; padding: 10px; border-radius: 10px; border: none;}
+main .card .top {border-bottom: 2px solid var(--search-bg-color); padding-bottom: 10px;}
+main .top img {width: 38px; height: 38px; border-radius: 50%; }
+main .top input {width: 80%; border-radius: 20px; outline: none; border: none; background-color: var(--search-bg-color); padding: 8px 8px; margin-left: 10px;}
+main .end-contents .bottom {padding: 10px ;}
+main .bottom button {background-color: transparent; border: none; margin-left: 10px; color: var(--random-color); font-weight: 500;}
+/* right article ad side */
+main .ads {height: 100vh; position: fixed; right: 0; top: 60px; z-index: 1;}
+main .ads .sponsored-ads {padding: 20px 50px;}
+main .sponsored-ads h5 {font-size: 17px; color: var(--sec-random-color);}
+main .ads .first-ad {position: relative;}
+main .first-ad img, .sec-ad img {margin-right: 10px; float: left;  border-radius: 5px;}
+main .first-ad p, .sec-ad p {font-size: 15px; font-weight: 600;} 
+main .group-conversation {padding: 20px 50px;}
+main .group-conversation p {padding: 10px;}
+main .group-conversation p span {background-color: var(--third-random-color); padding: 9px 9px; align-self: center; text-align: center; display: inline-flex; border-radius: 50%; margin-right: 10px; }
+main .group-conversation p:hover {background-color: var(--left-side-hover-color); border-radius: 10px; cursor: pointer;}
+
+main .button.active {border-bottom: 3px solid var(--sub-text-color);}
+

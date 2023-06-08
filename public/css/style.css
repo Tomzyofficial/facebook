@@ -1,0 +1,74 @@
+:root {
+  --mainbg-color: #f0f2f5;
+  --font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  --logo-width: 350px;
+  --logo-height: 100px;
+  --logo-writeup-size: 28px;  
+  --logo-writeup-color: #1C1E21;
+  --footer-color: #8A8D91;
+  --footer-size: 12px;
+}
+* {margin: 0; padding: 0; box-sizing: border-box;  font-family: var(--font-family);}
+main {background-color: var(--mainbg-color); height: 100vh;}
+.main-wrapper {transform: translateY(30%);}
+/* left side area */
+.left-side {transform: translate(100px, 65px);}
+.left-side #logo {width: var(--logo-width); height: var(--logo-height);}
+.left-side h2 {font-size: var(--logo-writeup-size); color: var(--logo-writeup-color); transform: translateX(60px); width: 80%; line-height: 28px; font-weight: lighter;}
+/* right side area */
+.right-side {margin-left: 80px}
+.right-side-container {background-color: #fff; width: 390px; border-radius: 6px; box-shadow: 2px 2px 5px 3px #ddd; }
+.right-side-container form {padding: 15px 15px;}
+.right-side form input {padding: 14px 16px; background-color: transparent; border: 1px solid #dddfe2; color: #1d2129; vertical-align: middle; width: 100%; margin-bottom: 13px; border-radius: 6px; font-size: 17px;}
+.right-side form input:focus {outline: 1px solid #1877F2;}
+.right-side-container form .btn-login {border: none;border-radius: 6px; font-size: 20px; line-height: 48px;padding: 0 16px; width: 100%; background-color: #1877F2; color: #fff;}
+.right-side-container form #forgotPassword {font-size: 14px; text-align: center; display: grid; text-decoration: none;  font-weight: 500;}
+.right-side-container form #createAccount {background-color: #42B72A; color: #fff; border-radius: 6px; border: none; font-size: 17px; line-height: 38px; padding: 5px 10px; width: 52%; margin: 0px 85px; font-weight: bolder;}
+.right-side-container + p {font-size: 14px; padding: 25px 50px;}
+.right-side-container + p a {text-decoration: none; color: var(--logo-writeup-color); font-weight: bold;}
+.right-side-container + p a:hover {text-decoration: underline; }
+footer .end-wrapper {height: 190px;  padding: 33px 140px;}
+footer ul  {display: flex; column-gap: 10px; list-style: none;
+ 
+}
+footer ul li {font-size: var(--footer-size); color: var(--footer-color);}
+footer ul li a {text-decoration: none; color: var(--footer-color);}
+footer ul li:hover a {text-decoration: underline; color: currentColor;}
+footer ul li #plusMore {background-color: #f5f6f7; border: 1px solid #ccd0d5; height: 18px; padding: 0 8px; color: #8A8D91; }
+footer #footer-hr {margin: 0 165px 0 30px  !important;}
+footer .secondRow ul {column-gap: 20px;}
+.end-wrapper #copywrite {font-size: small; padding-left: 32px;}
+/* signup */
+#exampleModal #modal-content {width: 432px; transform: translate(5vw, 8vh);}
+.modal-header .modal-title {font-size: 34px; line-height: 30px; color: var(--logo-writeup-color); font-weight: bold;}
+.modal-header .modal-title span {font-weight: 100; line-height: 0; font-size: 15px; color: #606770;}
+.modal-header .close {background-color: transparent; border: none; font-size: 40px; color: #606770;}
+.modal-body .form-group #fname, #lname {width: 190px; line-height: 25px; padding: 5px; background-color: #f5f6f7; border: 1px solid #ccd0d5; border-radius: 5px; margin-left: 5px; vertical-align: center;}
+.modal-body .form-group #fname:focus, #lname:focus {outline: none;}
+.modal-body .form-group #mobileEmail, #newPwd {width: 388px; background-color: #f5f6f7; border: 1px solid #ccd0d5; margin-top: 10px; margin-left: 5px; line-height: 25px; padding: 5px; border-radius: 5px; vertical-align: center;}
+.modal-body .form-group #mobileEmail:focus, #newPwd:focus {outline: none;}
+.modal-body .form-group input::placeholder {font-size: 15px; font-weight: 20;}
+/* date of birth select options */
+.modal-body #dateOfBirth {margin: 10px 5px;}
+.modal-body #dateOfBirth label {font-size: 12px; font-weight: normal;  line-height: 20px; color: #606770;}
+.modal-body #dateOfBirth label span {background-color: #606770; font-size: 10px; font-weight: 30; padding: 2px 4px; text-align: center; border-radius: 50%; color: #f1f1f1;}
+.modal-body #dateOfBirth select {width: 125px; font-size: 15px; font-weight: lighter; line-height: 25px; padding: 5px; border: 1px solid #ccd0d5; border-radius: 5px;}
+.modal-body #dateOfBirth select:focus {outline: none;}
+/* gender radio selection */
+.modal-body #gender {margin: 10px 5px; font-size: 15px; font-weight: 20;}
+.modal-body #gender #genderRadio {font-size: 12px; font-weight: lighter;  line-height: 20px; color: #606770;}
+.modal-body #gender #genderRadio span {background-color: #606770; font-size: 10px; font-weight: 30; padding: 2px 4px; text-align: center; border-radius: 50%; color: #f1f1f1;}
+.modal-body #gender .form-check {display: inline-flex; background-color: transparent; border: 1px solid #ccd0d5; line-height: 25px; padding: 5px; text-align: start; vertical-align: center; width: 125px; border-radius: 5px;}
+.modal-body #gender .form-check input[type="radio"] {translate: 45px 0;}
+.modal-body #gender .form-check input[class="male"] {translate: 65px 0;}
+/* custom genders */
+.modal-body .custom-genders {margin: 10px 5px; display: none;}
+.modal-body .custom-genders select {width: 388px; background-color: transparent; border: 1px solid #ccd0d5; line-height: 25px; padding: 5px; border-radius: 5px; vertical-align: center;}
+.modal-body .custom-genders select:focus {outline: none;}
+.modal-body .custom-genders input {width: 388px; background-color: #f5f6f7; border: 1px solid #ccd0d5; line-height: 25px; padding: 5px; border-radius: 5px; vertical-align: center;}
+.modal-body .custom-genders input:focus {outline: none;}
+/* signup write up and button */
+.modal-body .signup {margin: 10px 5px; font-size: 11px; font-weight: lighter; color: #1c1e21;} 
+.modal-body .signup p a {color: #385898; text-decoration: none; font-size: 11px;}
+.modal-body .signup p a:hover {text-decoration: underline; }
+.modal-body #signup-btn {background-color: #00a400; color: #fff; border-radius: 6px; border: none; font-size: 17px; line-height: 25px; padding: 5px 10px; width: 52%; margin: 0px 85px; font-weight: 600;}

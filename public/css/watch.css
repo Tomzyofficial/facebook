@@ -1,0 +1,30 @@
+:root {
+  --mainbg-color: #f2f3f5;
+  --sec-random-color: #050505;
+  --sub-text-color: rgba(0, 81, 255, 0.842);
+  --light-text-color: #fff;
+  --left-side-hover-color: #e4e6eb;
+  --search-bg-color: #f2f3f5;
+  --third-random-color: rgba(0, 0, 0, .05);
+  --random-color: #65676b;
+}
+.body {background-color: var(--mainbg-color);}
+/* main watch contents */
+main .watch_contents {
+  float: left; left: 62px; position: fixed; background-color: var(--light-text-color); width: 27%; height: 100vh; padding: 15px;
+}
+main .top h4 {float: left;}
+main .top span {float: right;}
+/* middle contents */
+main .middle_search {clear: both;}
+main .middle_search .content-search {background-color: var(--mainbg-color); position: relative; padding: 5px 5px; border-radius: 20px; width: 320px;}
+main .content-search i {padding-right: 10px;}
+main input {position: absolute; border: none; background-color: transparent;}
+/* extentions */
+main .extentions .span-active {background-color: var(--mainbg-color); border-radius: 10px; width: 330px;}
+main .extentions .btn {text-align: start; width: 330px; border-radius: 10px;}
+main .extentions .btn:hover {
+  background-color: var(--left-side-hover-color);
+}
+main .extentions .span {background-color: var(--mainbg-color); padding: 1;}
+.section {margin-left: 500px;}
